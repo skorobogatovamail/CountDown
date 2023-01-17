@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    vertical-align: top;
+}
+
+html, body{ 
+}
+
+.wrapper {
+    font-family: 'Lobster';
+    min-height: 100%;
+}
+
+._container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 300px;
+}
+
+.parallax {
+    min-height: 100vh;
+    background-color: rgb(29, 17, 69);
+    position: relative;
+}
+.parallax__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+.parallax__container {
+    height: 100%;
+    color: gold;
+    text-shadow: #FC0 1px 0 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    min-width: 320px;
+
+}
+
+
+
+.countdown {
+    
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 0 10% 0;
+    z-index: 100;
+
+}
+.countdown__item {
+}
+.countdown__item-days {
+}
+.countdown__number {
+    font-family: 'Karla';
+    font-size: 70px;
+    color: rgba(253, 253, 253, 0.837);
+    text-shadow: rgb(163, 255, 249) 1px 0 30px;
+    font-weight: 900;
+}
+.countdown__label {
+    font-size: 20px;
+}
+.countdown__item-hours {
+}
+.countdown__item-minutes {
+}
+.countdown__item-seconds {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parallax__title {
+    /* font-family: 'Roboto'; */
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+.parallax__title::after{
+    content: '';
+    margin: 10px 0 0 0;
+    background-color: gold;
+    height: 1px;
+    flex: 0 0 3px;
+    box-shadow: #FC0 1px 0 10px;
+}
+
+
+
+
+
+
+
+
+.parallax__images {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    bottom: -5%;
+    right: -5%;
+    z-index: 1;
+}
+
+.images-parallax__item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.images-parallax__base,
+.images-parallax__middle,
+.images-parallax__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.images-parallax__base {
+    background: url(img/base.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    top: 0;
+    transform: translate(1%, 1%);
+
+}
+.images-parallax__middle {
+    background: url(img/middle.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: 2;
+}
+.images-parallax__front {
+    background: url(img/front.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: 3;
+
+}
